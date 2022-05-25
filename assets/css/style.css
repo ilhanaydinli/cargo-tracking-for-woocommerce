@@ -1,0 +1,63 @@
+.cargo-tracking-for-woocommerce-tooltipdiv {
+    position: relative;
+    display: inline-block;
+}
+
+.cargo-tracking-for-woocommerce-tooltipdiv:hover .cargo-tracking-for-woocommerce-tooltip {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.cargo-tracking-for-woocommerce-tooltipa:focus {
+    color: initial;
+    box-shadow: initial;
+    outline: initial;
+}
+
+.cargo-tracking-for-woocommerce-tooltip {
+    position: absolute;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    opacity: 0;
+    z-index: 99999;
+    width: 15rem;
+    visibility: hidden;
+
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+
+    bottom: 55px;
+    left: -95px;
+}
+
+.cargo-tracking-for-woocommerce-tooltip:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #000000;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+.cargo-tracking-for-woocommerce-cargo-img {
+    width: 75px
+}
+
+.cargo-tracking-for-woocommerce-meta-box-buttons{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    padding:15px 0 0px 0;
+}

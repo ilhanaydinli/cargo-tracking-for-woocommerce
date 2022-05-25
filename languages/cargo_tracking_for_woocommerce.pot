@@ -1,0 +1,249 @@
+# Copyright (C) 2022 CargoTrackingForWoocommerce
+# This file is distributed under the same license as the CargoTrackingForWoocommerce package.
+msgid ""
+msgstr ""
+"Project-Id-Version: CargoTrackingForWoocommerce\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-05-23 22:02+0000\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../app/Base/Assets.php:28
+msgid "Select Image"
+msgstr ""
+
+#: ../app/Base/Assets.php:29
+msgid "Are you sure?"
+msgstr ""
+
+#: ../app/Base/Assets.php:50, ../app/Woocommerce/WCSettings.php:32, ../app/Woocommerce/WCSettings.php:95
+msgid "Settings"
+msgstr ""
+
+#: ../app/Base/MetaBox.php:18, ../app/Base/MetaBox.php:46, ../app/Base/MetaBox.php:47
+msgid "Tracking Code"
+msgstr ""
+
+#: ../app/Base/MetaBox.php:31, ../app/Base/MetaBox.php:38
+msgid "Select Cargo Company"
+msgstr ""
+
+#: ../app/Base/MetaBox.php:55, ../app/Base/MetaBox.php:56
+msgid "Shipping Date"
+msgstr ""
+
+#: ../app/Base/MetaBox.php:63
+msgid "Send E-Mail"
+msgstr ""
+
+#: ../app/Base/MetaBox.php:67
+msgid "If you mark it, an email containing the cargo tracking text will be sent."
+msgstr ""
+
+#: ../app/Base/MetaBox.php:72
+msgid "Change Order Status"
+msgstr ""
+
+#: ../app/Base/MetaBox.php:76
+msgid "If you mark it, the order status will be updated as shipped."
+msgstr ""
+
+#: ../app/Base/MetaBox.php:87, ../app/Table/Table.php:23
+msgid "Delete"
+msgstr ""
+
+#: ../app/Base/MetaBox.php:90
+msgid "Save"
+msgstr ""
+
+#: ../app/Table/Table.php:24
+msgid "Edit"
+msgstr ""
+
+#: ../app/Table/Table.php:113
+msgid "Company"
+msgstr ""
+
+#: ../app/Table/Table.php:114, ../app/Woocommerce/WCSettings.php:58
+msgid "Logo"
+msgstr ""
+
+#: ../app/Table/Table.php:115, ../app/Woocommerce/WCSettings.php:72
+msgid "Description"
+msgstr ""
+
+#: ../app/Table/Table.php:116, ../app/Woocommerce/WCSettings.php:80
+msgid "Url"
+msgstr ""
+
+#: ../app/Table/TableFunctions.php:23, ../app/Woocommerce/BackEndTable.php:29, ../app/Woocommerce/FrontEndTable.php:29, ../app/Woocommerce/WCSettings.php:22, ../app/Woocommerce/WCSettings.php:30
+msgid "Cargo Tracking"
+msgstr ""
+
+#: ../app/Table/TableFunctions.php:24
+msgid "New Cargo Company"
+msgstr ""
+
+#: ../app/Woocommerce/SettingsField.php:39
+msgid "İnsert"
+msgstr ""
+
+#: ../app/Woocommerce/SettingsField.php:40
+msgid "Remove"
+msgstr ""
+
+#: ../app/Woocommerce/Status.php:16, ../app/Woocommerce/Status.php:31
+msgid "Order Shipping"
+msgstr ""
+
+#: ../app/Woocommerce/Status.php:21
+msgid "Order Shipping (%s)"
+msgid_plural "Order Shipping (%s)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../app/Woocommerce/WCSettings.php:31
+msgid "New Add"
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:53
+msgid "Cargo Company Add"
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:55
+msgid "You can add a new cargo company from this section."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:60
+msgid "Select the picture of the cargo company."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:65
+msgid "Cargo Company Name"
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:67
+msgid "Enter the name of the cargo company."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:74
+msgid "Text for users cargo tracking section."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:74, ../app/Woocommerce/WCSettings.php:83
+msgid "Tags available: [shipping_date], [tracking_code], [img], [company]"
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:82
+msgid "The url where users will follow the cargo."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:97
+msgid "In this section, you can adjust the cargo tracking plugin."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:100
+msgid "E-Mail Sending"
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:101
+msgid "Send email when order status changes to \"Order Shipped\"."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:102
+msgid "Check this field to send email to users that the order status has been updated to \"Order Shipped\"."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:107
+msgid "E-Mail Heading"
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:109
+msgid "You can change the e-mail header."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:110
+msgid "You can use the tags you use in the header section of Woocommerce email templates."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:114
+msgid "E-Mail Subject"
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:116
+msgid "You can change the e-mail subject."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:117
+msgid "You can use the tags you use in the subject section of Woocommerce email templates."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:121
+msgid "E-Mail and Detail Content"
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:122
+msgid "Tags available: [shipping_date.], [tracking_code], [img], [description], [url]"
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:124
+msgid "In this section you can edit the detail text in the email description and order details."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:129
+msgid "E-Mail Template"
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:130
+msgid "You can choose which template to send the sent e-mail to. Recommended template: Processing"
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:138
+msgid "Orders Status"
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:139
+msgid "When you disable or remove the plugin, the status of orders that have \"Order Shipment\" status is given."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:147
+msgid "Delete All Data"
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:148
+msgid "Delete all plug-in data when I delete the plug-in."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:151
+msgid "Caution: If you select this option, all cargo data you have entered into orders and all data of the add-on (cargo data, add-on settings, etc.) will be deleted."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:223
+msgid "Please fill in all fields."
+msgstr ""
+
+#: ../app/Woocommerce/WCSettings.php:220
+msgid "New cargo company added."
+msgstr ""
+
+#: ../app/Base/Hooks/Activate.php:23, ../app/Base/Hooks/Activate.php:31, ../app/Base/Hooks/Activate.php:39, ../app/Base/Hooks/Activate.php:47, ../app/Base/Hooks/Activate.php:55, ../app/Base/Hooks/Activate.php:63
+msgid "Your order was sent via [company] on [shipping_date]. Cargo Tracking Code: [tracking_code]"
+msgstr ""
+
+#: ../app/Base/Hooks/Activate.php:88
+msgid "Order Shipped"
+msgstr ""
+
+#: ../app/Base/Hooks/Activate.php:94
+msgid "{site_title} Order Shipping"
+msgstr ""
+
+#: ../app/Base/Hooks/Activate.php:100
+msgid "<p>[description]</p><p>Click <a href=\"[url]\" target=\"_blank\">here</a> to follow your cargo.</p>"
+msgstr ""
