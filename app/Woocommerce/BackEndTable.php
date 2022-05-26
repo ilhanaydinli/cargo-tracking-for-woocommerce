@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Woocommerce;
+namespace CargoTrackingForWooCommerce\Woocommerce;
 
-use App\View\View;
+use CargoTrackingForWooCommerce\View\View;
 
 class BackEndTable
 {

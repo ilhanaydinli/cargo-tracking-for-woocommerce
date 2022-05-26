@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Woocommerce;
+namespace CargoTrackingForWooCommerce\Woocommerce;
 
-use App\Table\TableFunctions;
+use CargoTrackingForWooCommerce\Table\TableFunctions;
 
 class WCSettings extends \WC_Settings_Page
 {

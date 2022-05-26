@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Base\Hooks;
+namespace CargoTrackingForWooCommerce\Base\Hooks;
 
 class Deactivate
 {
     public function __construct()
     {
-        $file = plugin_dir_path(dirname(__FILE__, 3)) . 'CargoTrackingForWoocommerce.php';
+        $file = plugin_dir_path(dirname(__FILE__, 3)) . 'CargoTrackingForWooCommerce.php';
         register_deactivation_hook($file, [$this, 'setOrders']);
     }
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Base;
+namespace CargoTrackingForWooCommerce\Base;
 
-use App\Base\Assets;
-use App\Base\MetaBox;
-use App\Base\Hooks\Activate;
-use App\Base\Hooks\Deactivate;
+use CargoTrackingForWooCommerce\Base\Assets;
+use CargoTrackingForWooCommerce\Base\MetaBox;
+use CargoTrackingForWooCommerce\Base\Hooks\Activate;
+use CargoTrackingForWooCommerce\Base\Hooks\Deactivate;
 
 class RegisterServices
 {

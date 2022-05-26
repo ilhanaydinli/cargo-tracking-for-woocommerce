@@ -21,8 +21,8 @@ if (!defined('ABSPATH')) {
 
 require_once dirname(__FILE__) . '/vendor/autoload.php';
 
-use App\Base\RegisterServices;
-use App\Woocommerce\WoocommerceInit;
+use CargoTrackingForWooCommerce\Base\RegisterServices;
+use CargoTrackingForWooCommerce\Woocommerce\WoocommerceInit;
 
 class CargoTrackingForWoocommerce
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Base;
+namespace CargoTrackingForWooCommerce\Base;
 
-use App\View\View;
+use CargoTrackingForWooCommerce\View\View;
 
 class MetaBox
 {

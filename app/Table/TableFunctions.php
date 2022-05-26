@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Table;
+namespace CargoTrackingForWooCommerce\Table;
 
-use App\Table\Table;
+use CargoTrackingForWooCommerce\Table\Table;
 
 class TableFunctions
 {

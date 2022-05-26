@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Base;
+namespace CargoTrackingForWooCommerce\Base;
 
 class Assets
 {
@@ -9,7 +9,7 @@ class Assets
         add_action('admin_enqueue_scripts', [$this, 'register_admin']);
         add_action('wp_enqueue_scripts', [$this, 'register_wp']);
         add_filter(
-            'plugin_action_links_cargo-tracking-for-woocommerce/CargoTrackingForWoocommerce.php',
+            'plugin_action_links_cargo-tracking-for-woocommerce/CargoTrackingForWooCommerce.php',
             [$this, 'add_plugin_page_settings_link']
         );
     }

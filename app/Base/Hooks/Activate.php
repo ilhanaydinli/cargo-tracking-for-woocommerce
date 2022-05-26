@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Base\Hooks;
+namespace CargoTrackingForWooCommerce\Base\Hooks;
 
 class Activate
 {
     public function __construct()
     {
-        $file = plugin_dir_path(dirname(__FILE__, 3)) . 'CargoTrackingForWoocommerce.php';
+        $file = plugin_dir_path(dirname(__FILE__, 3)) . 'CargoTrackingForWooCommerce.php';
         register_activation_hook($file,  [$this, 'activate']);
 
         $this->assetDir = plugin_dir_url(dirname(__FILE__, 3)) . 'assets/img/';

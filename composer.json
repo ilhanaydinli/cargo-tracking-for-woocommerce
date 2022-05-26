@@ -9,6 +9,9 @@
     "cargo tracking",
     "woocommerce cargo tracking"
   ],
+  "require": {
+    "php": ">= 7.0"
+  },
   "authors": [
     {
       "name": "İlhan Aydınlı",
@@ -19,7 +22,7 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "App\\": "app/"
+      "CargoTrackingForWooCommerce\\": "app/"
     }
   }
 }

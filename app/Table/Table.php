@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Table;
+namespace CargoTrackingForWooCommerce\Table;
 
-use App\Table\WP_List_Table;
+use CargoTrackingForWooCommerce\Table\WP_List_Table;
 
 class Table extends WP_List_Table
 {

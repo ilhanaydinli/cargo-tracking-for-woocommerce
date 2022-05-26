@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Woocommerce;
+namespace CargoTrackingForWooCommerce\Woocommerce;
 
 class SettingsField
 {

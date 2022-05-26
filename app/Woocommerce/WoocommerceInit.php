@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Woocommerce;
+namespace CargoTrackingForWooCommerce\Woocommerce;
 
-use App\Woocommerce\Email;
-use App\Woocommerce\Status;
-use App\Woocommerce\SettingsField;
-use App\Woocommerce\WCSettings;
-use App\Woocommerce\FrontEndTable;
-use App\Woocommerce\BackEndTable;
+use CargoTrackingForWooCommerce\Woocommerce\Email;
+use CargoTrackingForWooCommerce\Woocommerce\Status;
+use CargoTrackingForWooCommerce\Woocommerce\SettingsField;
+use CargoTrackingForWooCommerce\Woocommerce\WCSettings;
+use CargoTrackingForWooCommerce\Woocommerce\FrontEndTable;
+use CargoTrackingForWooCommerce\Woocommerce\BackEndTable;
 
 class WoocommerceInit
 {
