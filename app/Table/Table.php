@@ -27,17 +27,6 @@ class Table extends WP_List_Table
 
     public function process_bulk_action()
     {
-
-        // security check!
-        /*if (isset($_POST['_wpnonce']) && !empty($_POST['_wpnonce'])) {
-
-            $nonce  = filter_input(INPUT_POST, '_wpnonce', FILTER_SANITIZE_STRING);
-            $action = 'bulk-' . $this->_args['plural'];
-
-            if (!wp_verify_nonce($nonce, $action))
-                wp_die('Nope! Security check failed!');
-        }*/
-
         $action = $this->current_action();
 
         switch ($action) {

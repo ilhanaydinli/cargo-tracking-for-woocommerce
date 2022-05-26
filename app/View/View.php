@@ -14,8 +14,8 @@ class View
         }
 
         echo '<div class="cargo-tracking-for-woocommerce-tooltipdiv">
-                <a target="_blank" href="' . esc_url($data['url']) . '" class="cargo-tracking-for-woocommerce-tooltipa"><img src="' . $src . '" class="cargo-tracking-for-woocommerce-cargo-img"/></a>
-                <span class="cargo-tracking-for-woocommerce-tooltip">' . $data['description'] . '</span></div>';
+                <a target="_blank" href="' . esc_url($data['url']) . '" class="cargo-tracking-for-woocommerce-tooltipa"><img src="' . esc_attr($src) . '" class="cargo-tracking-for-woocommerce-cargo-img"/></a>
+                <span class="cargo-tracking-for-woocommerce-tooltip">' . esc_html($data['description']) . '</span></div>';
     }
 
     public static function text($data)
@@ -34,6 +34,6 @@ class View
             $emailDescripton
         );
 
-        echo $emailDescriptonReplace;
+        echo wp_kses_post($emailDescriptonReplace);
     }
 }
