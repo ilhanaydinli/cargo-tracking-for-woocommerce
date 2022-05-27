@@ -45,7 +45,7 @@ class TableFunctions
 
             $cargoCompaniesNew[sanitize_title($_POST['company'])] = [
                 'key' => sanitize_title($_POST['company']),
-                'img' => $_POST['img'],
+                'img' => sanitize_url($_POST['img']),
                 'company' => sanitize_text_field($_POST['company']),
                 'description' => sanitize_text_field($_POST['description']),
                 'url' => sanitize_text_field($_POST['url']),

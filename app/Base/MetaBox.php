@@ -97,58 +97,66 @@ class MetaBox
 
     public function save_order_tracking_metabox($order_id)
     {
+        $cargo_company_key = sanitize_text_field($_POST['cargo_tracking_for_woocommerce-cargo_company_key']);
+        $tracking_code = sanitize_text_field($_POST['cargo_tracking_for_woocommerce-tracking_code']);
+        $shipping_date = sanitize_text_field($_POST['cargo_tracking_for_woocommerce-shipping_date']);
+
+        $order_status = sanitize_key($_POST['order_status']);
+        $send_email = sanitize_key($_POST['cargo_tracking_for_woocommerce-send_email']);
+        $change_order_type = sanitize_key($_POST['cargo_tracking_for_woocommerce-change_order_type']);
+        $delete = sanitize_key($_POST['cargo_tracking_for_woocommerce-delete']);
+
         $order = wc_get_order($order_id);
-        if (isset($_POST['cargo_tracking_for_woocommerce-delete'])) {
+
+        if ($delete == 'delete') {
             $order->update_status('pending');
             delete_post_meta($order_id, 'cargo_tracking_for_woocommerce-data');
             return;
         }
 
         if (
-            isset($_POST['cargo_tracking_for_woocommerce-cargo_company_key'])
-            && $_POST['cargo_tracking_for_woocommerce-cargo_company_key'] != ''
-            && isset($_POST['cargo_tracking_for_woocommerce-tracking_code'])
-            && isset($_POST['cargo_tracking_for_woocommerce-shipping_date'])
+            $cargo_company_key != ''
+            && isset($tracking_code)
+            && isset($shipping_date)
         ) {
             $cargoCompanies = get_option('cargo_tracking_for_woocommerce');
 
-            $img = $cargoCompanies[$_POST['cargo_tracking_for_woocommerce-cargo_company_key']]['img'];
+            $img = $cargoCompanies[$cargo_company_key]['img'];
 
 
             $description = str_replace(
                 ['[shipping_date]', '[tracking_code]', '[img]', '[company]'],
                 [
-                    $_POST['cargo_tracking_for_woocommerce-shipping_date'],
-                    $_POST['cargo_tracking_for_woocommerce-tracking_code'],
-                    $cargoCompanies[$_POST['cargo_tracking_for_woocommerce-cargo_company_key']]['img'],
-                    $cargoCompanies[$_POST['cargo_tracking_for_woocommerce-cargo_company_key']]['company']
+                    $shipping_date,
+                    $tracking_code,
+                    $cargoCompanies[$cargo_company_key]['img'],
+                    $cargoCompanies[$cargo_company_key]['company']
                 ],
-                $cargoCompanies[$_POST['cargo_tracking_for_woocommerce-cargo_company_key']]['description']
+                $cargoCompanies[$cargo_company_key]['description']
             );
 
             $url = str_replace(
                 ['[shipping_date]', '[tracking_code]', '[img]', '[company]'],
                 [
-                    $_POST['cargo_tracking_for_woocommerce-shipping_date'],
-                    $_POST['cargo_tracking_for_woocommerce-tracking_code'],
-                    $cargoCompanies[$_POST['cargo_tracking_for_woocommerce-cargo_company_key']]['img'],
-                    $cargoCompanies[$_POST['cargo_tracking_for_woocommerce-cargo_company_key']]['company']
+                    $shipping_date,
+                    $tracking_code,
+                    $cargoCompanies[$cargo_company_key]['img'],
+                    $cargoCompanies[$cargo_company_key]['company']
                 ],
-                $cargoCompanies[$_POST['cargo_tracking_for_woocommerce-cargo_company_key']]['url']
+                $cargoCompanies[$cargo_company_key]['url']
             );
 
             $data = [
-                'key' => $_POST['cargo_tracking_for_woocommerce-cargo_company_key'],
+                'key' => $cargo_company_key,
                 'img' => $img,
-                'tracking_code' => $_POST['cargo_tracking_for_woocommerce-tracking_code'],
-                'shipping_date' => $_POST['cargo_tracking_for_woocommerce-shipping_date'],
+                'tracking_code' => $tracking_code,
+                'shipping_date' => $shipping_date,
                 'description' => $description,
                 'url' => $url,
-                'send_email' => $_POST['cargo_tracking_for_woocommerce-send_email'],
-                'change_order_type' => $_POST['cargo_tracking_for_woocommerce-change_order_type'],
-                'status' => ($_POST['order_status'] == 'wc-cargo_shipping') ? 1 : 0
+                'send_email' => $send_email,
+                'change_order_type' => $change_order_type,
+                'status' => ($order_status == 'wc-cargo_shipping') ? 1 : 0
             ];
-
 
             if (metadata_exists('post', $order_id, 'cargo_tracking_for_woocommerce-data')) {
                 update_post_meta($order_id, 'cargo_tracking_for_woocommerce-data', $data);
