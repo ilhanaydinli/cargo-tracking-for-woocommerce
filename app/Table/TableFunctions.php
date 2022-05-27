@@ -36,13 +36,14 @@ class TableFunctions
     {
         $cargoCompanies = get_option('cargo_tracking_for_woocommerce');
 
-        if (isset($_REQUEST['key'])) {
-            unset($cargoCompanies[$_REQUEST['key']]);
+        $key = sanitize_key($_REQUEST['key']);
+        if (isset($key)) {
+            unset($cargoCompanies[$key]);
         }
 
         if (!empty($_POST['company']) && !empty($_POST['description'])  && !empty($_POST['url'])) {
 
-            $cargoCompaniesYeni[sanitize_title($_POST['company'])] = [
+            $cargoCompaniesNew[sanitize_title($_POST['company'])] = [
                 'key' => sanitize_title($_POST['company']),
                 'img' => $_POST['img'],
                 'company' => sanitize_text_field($_POST['company']),
@@ -50,7 +51,7 @@ class TableFunctions
                 'url' => sanitize_text_field($_POST['url']),
             ];
 
-            $merged_options = wp_parse_args($cargoCompanies, $cargoCompaniesYeni);
+            $merged_options = wp_parse_args($cargoCompanies, $cargoCompaniesNew);
 
             update_option(
                 'cargo_tracking_for_woocommerce',
