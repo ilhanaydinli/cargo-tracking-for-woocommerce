@@ -184,8 +184,8 @@ class WCSettings extends \WC_Settings_Page
             $hide_save_button = true;
             TableFunctions::get_table();
         } elseif ('new' === $current_section) {
-            $key = sanitize_key($_REQUEST['key']);
-            if (isset($key)) {
+            if (isset($_REQUEST['key'])) {
+                $key = sanitize_key($_REQUEST['key']);
                 $data = get_option('cargo_tracking_for_woocommerce');
                 $settings = $this->get_settings($current_section, $data[$key]);
             } else {
