@@ -5,9 +5,14 @@
   "version": "1.0.0",
   "keywords": [
     "kargo takip",
+    "kargo",
     "woocommerce kargo takip",
     "cargo tracking",
-    "woocommerce cargo tracking"
+    "cargo",
+    "woocommerce cargo tracking",
+    "woocommerce shipping tracking",
+    "shipping tracking",
+    "shipping"
   ],
   "require": {
     "php": ">= 7.0"

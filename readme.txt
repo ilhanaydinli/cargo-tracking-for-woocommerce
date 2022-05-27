@@ -1,7 +1,7 @@
 === Cargo Tracking for WooCommerce ===
 Contributors: ilhanaydinli
 Donate link: https://ilhanaydinli.com/
-Tags: kargo takip, woocommerce kargo takip, cargo tracking, woocommerce cargo tracking
+Tags: kargo takip, kargo, woocommerce kargo takip, cargo tracking, cargo, woocommerce cargo tracking, woocommerce shipping tracking, shipping tracking, shipping
 Requires at least: 5.1
 Tested up to: 6.0
 Stable tag: 1.0.0
