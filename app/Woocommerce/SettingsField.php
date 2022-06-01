@@ -13,9 +13,6 @@ class SettingsField
     {
         $option_value = (array) \WC_Admin_Settings::get_option($value['id'],  $value['default']);
 
-        $field_description = \WC_Admin_Settings::get_field_description($value);
-        $tooltip_html      = $field_description['tooltip_html'];
-
         $default_image = plugin_dir_url(dirname(__FILE__, 2)) . 'assets/img/no-image.png';
 
         if (!empty($option_value[0])) {
@@ -26,9 +23,10 @@ class SettingsField
             $value2 = '';
         }
 
-?><tr valign="top">
+?>
+        <tr valign="top">
             <th scope="row" class="titledesc">
-                <label for="<?php echo esc_attr($value['id']); ?>"><?php echo esc_html($value['title']); ?> <?php echo $tooltip_html; ?></label>
+                <label for="<?php echo esc_attr($value['id']); ?>"><?php echo esc_html($value['title']); ?> <?php echo wc_help_tip($value['desc_tip']); ?></label>
             </th>
             <td class="forminp forminp-text">
 

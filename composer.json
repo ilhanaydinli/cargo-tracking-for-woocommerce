@@ -2,7 +2,7 @@
   "name": "ilhanaydinli/cargo_tracking_for_woocommerce",
   "type": "project",
   "description": "With WooCommerce cargo tracking add-on, you can add as many cargo companies as you want and follow the cargo from users and order details.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [
     "kargo takip",
     "kargo",

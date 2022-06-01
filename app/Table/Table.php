@@ -33,7 +33,7 @@ class Table extends \WP_List_Table
                 $cargoCompanies = get_option('cargo_tracking_for_woocommerce');
                 $keys = isset($_REQUEST['key']) ? wp_parse_slug_list($_REQUEST['key']) : [];
                 foreach ($keys as $key) {
-                    unset($cargoCompanies[$key]);
+                    unset($cargoCompanies[sanitize_key($key)]);
                 }
                 update_option(
                     'cargo_tracking_for_woocommerce',
@@ -44,7 +44,7 @@ class Table extends \WP_List_Table
             case 'edit':
                 $keys = isset($_REQUEST['key']) ? wp_parse_slug_list($_REQUEST['key']) : [];
 
-                wp_safe_redirect('admin.php?page=wc-settings&tab=cargo_tracking_for_woocommerce&section=new&key=' . $keys[0]);
+                wp_safe_redirect('admin.php?page=wc-settings&tab=cargo_tracking_for_woocommerce&section=new&key=' . sanitize_key($keys[0]));
                 break;
             default:
                 // do nothing or something else
