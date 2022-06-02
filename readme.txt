@@ -49,3 +49,13 @@ Development happens [on GitHub](https://github.com/ilhanaydinli/cargo_tracking_f
 == Installation ==
 * Download the plugin.
 * Upload the zip file via Wordpress admin or extract the zip to the wp-content/plugin folder.
+
+== Changelog ==
+= 1.0.3 =
+* Composer dependency update.
+= 1.0.2 =
+* Security update.
+= 1.0.1 =
+* Security update.
+= 1.0.0 =
+* The plugin has been released as open source.
