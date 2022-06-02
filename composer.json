@@ -2,7 +2,7 @@
   "name": "ilhanaydinli/cargo_tracking_for_woocommerce",
   "type": "project",
   "description": "With the WooCommerce cargo tracking plugin, you can add as many cargo companies as you want, show cargo tracking links on the front and admin side, and send cargo tracking emails to users.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "keywords": [
     "kargo takip",
     "kargo",
