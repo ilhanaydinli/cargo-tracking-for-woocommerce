@@ -4,7 +4,7 @@ Donate link: https://ilhanaydinli.com/
 Tags: kargo takip, kargo, woocommerce kargo takip, cargo tracking, cargo, woocommerce cargo tracking, woocommerce shipping tracking, shipping tracking, shipping
 Requires at least: 5.1
 Tested up to: 6.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 Requires PHP: 7.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -49,11 +49,3 @@ Development happens [on GitHub](https://github.com/ilhanaydinli/cargo_tracking_f
 == Installation ==
 * Download the plugin.
 * Upload the zip file via Wordpress admin or extract the zip to the wp-content/plugin folder.
-
-== Changelog ==
-= 1.0 =
-* The plugin has been released as open source.
-
-== Upgrade Notice ==
-= 1.0 =
-* The plugin has been released as open source.

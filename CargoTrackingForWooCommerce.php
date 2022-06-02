@@ -4,7 +4,7 @@
  * Plugin Name:       Cargo Tracking for WooCommerce
  * Plugin URI:        https://ilhanaydinli.com/projeler/cargo-tracking-for-woocommerce
  * Description:       With WooCommerce cargo tracking add-on, you can add as many cargo companies as you want and follow the cargo from users and order details.
- * Version:           1.0.2
+ * Version:           1.0.3
  * Requires at least: 5.1
  * Requires PHP:      7.0
  * Author:            İlhan Aydınlı

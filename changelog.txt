@@ -1,0 +1,13 @@
+== Changelog ==
+
+= 1.0.3 =
+* Composer dependency update.
+
+= 1.0.2 =
+* Security update.
+
+= 1.0.1 =
+* Security update.
+
+= 1.0.0 =
+* The plugin has been released as open source.
