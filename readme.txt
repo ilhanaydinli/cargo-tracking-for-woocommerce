@@ -10,7 +10,7 @@ License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
-With WooCommerce cargo tracking add-on, you can add as many cargo companies as you want and follow the cargo from users and order details.
+With the WooCommerce cargo tracking plugin, you can add as many cargo companies as you want, show cargo tracking links on the front and admin side, and send cargo tracking emails to users.
 
 == Plugin Functionality ==
 * "Order Shipped" status for WooCommerce.
