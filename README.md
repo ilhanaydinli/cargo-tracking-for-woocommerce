@@ -1,6 +1,6 @@
 # Cargo Tracking for WooCommerce
 
-![](screenshots/icon-256x256.png)
+![](screenshots/banner-1544x500.png)
 
 With the WooCommerce cargo tracking plugin, you can add as many cargo companies as you want, show cargo tracking links on the front and admin side, and send cargo tracking emails to users.
 
