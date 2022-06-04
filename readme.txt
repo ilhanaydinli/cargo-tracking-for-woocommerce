@@ -25,7 +25,7 @@ With the WooCommerce cargo tracking plugin, you can add as many cargo companies 
 * Ability to delete all data of the add-on when you remove the add-on.
 
 == Contribute To Development ==
-Development happens [on GitHub](https://github.com/ilhanaydinli/cargo_tracking_for_woocommerce).
+Development happens [on GitHub](https://github.com/ilhanaydinli/cargo-tracking-for-woocommerce).
 
 == Screenshots ==
 1. Cargo Companies
