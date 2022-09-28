@@ -3,18 +3,22 @@
 #
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: CargoTrackingForWoocommerce\n"
+"POT-Creation-Date: 2022-05-23 22:02+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
-"POT-Creation-Date: 2022-05-23 22:02+0000\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"Project-Id-Version: CargoTrackingForWoocommerce\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.1\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
 #: ../app/Base/Assets.php:28
 msgid "Select Image"
@@ -24,25 +28,21 @@ msgstr "Fotoğraf seç"
 msgid "Are you sure?"
 msgstr "Emin misin?"
 
-#: ../app/Base/Assets.php:50,
-#: ../app/Woocommerce/WCSettings.php:32,
+#: ../app/Base/Assets.php:50, ../app/Woocommerce/WCSettings.php:32,
 #: ../app/Woocommerce/WCSettings.php:95
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: ../app/Base/MetaBox.php:18,
-#: ../app/Base/MetaBox.php:46,
+#: ../app/Base/MetaBox.php:18, ../app/Base/MetaBox.php:46,
 #: ../app/Base/MetaBox.php:47
 msgid "Tracking Code"
 msgstr "Takip Kodu"
 
-#: ../app/Base/MetaBox.php:31,
-#: ../app/Base/MetaBox.php:38
+#: ../app/Base/MetaBox.php:31, ../app/Base/MetaBox.php:38
 msgid "Select Cargo Company"
 msgstr "Kargo Firması Seçin"
 
-#: ../app/Base/MetaBox.php:55,
-#: ../app/Base/MetaBox.php:56
+#: ../app/Base/MetaBox.php:55, ../app/Base/MetaBox.php:56
 msgid "Shipping Date"
 msgstr "Sevkiyat Tarihi"
 
@@ -62,8 +62,7 @@ msgstr "Sipariş Durumunu Değiştir"
 msgid "If you mark it, the order status will be updated as shipped."
 msgstr "İşaretlerseniz sipariş durumu kargoya verildi olarak güncellenecektir."
 
-#: ../app/Base/MetaBox.php:87,
-#: ../app/Table/Table.php:23
+#: ../app/Base/MetaBox.php:87, ../app/Table/Table.php:23
 msgid "Delete"
 msgstr "Sil"
 
@@ -79,26 +78,21 @@ msgstr "Düzenle"
 msgid "Company"
 msgstr "Firma"
 
-#: ../app/Table/Table.php:114,
-#: ../app/Woocommerce/WCSettings.php:58
+#: ../app/Table/Table.php:114, ../app/Woocommerce/WCSettings.php:58
 msgid "Logo"
 msgstr "Logo"
 
-#: ../app/Table/Table.php:115,
-#: ../app/Woocommerce/WCSettings.php:72
+#: ../app/Table/Table.php:115, ../app/Woocommerce/WCSettings.php:72
 msgid "Description"
 msgstr "Açıklama"
 
-#: ../app/Table/Table.php:116,
-#: ../app/Woocommerce/WCSettings.php:80
+#: ../app/Table/Table.php:116, ../app/Woocommerce/WCSettings.php:80
 msgid "Url"
 msgstr "Url"
 
-#: ../app/Table/TableFunctions.php:23,
-#: ../app/Woocommerce/BackEndTable.php:29,
+#: ../app/Table/TableFunctions.php:23, ../app/Woocommerce/BackEndTable.php:29,
 #: ../app/Woocommerce/FrontEndTable.php:29,
-#: ../app/Woocommerce/WCSettings.php:22,
-#: ../app/Woocommerce/WCSettings.php:30
+#: ../app/Woocommerce/WCSettings.php:22, ../app/Woocommerce/WCSettings.php:30
 msgid "Cargo Tracking"
 msgstr "Kargo Takip"
 
@@ -114,8 +108,7 @@ msgstr "Ekle"
 msgid "Remove"
 msgstr "Sil"
 
-#: ../app/Woocommerce/Status.php:16,
-#: ../app/Woocommerce/Status.php:31
+#: ../app/Woocommerce/Status.php:16, ../app/Woocommerce/Status.php:31
 msgid "Order Shipping"
 msgstr "Kargoya Verildi"
 
@@ -153,8 +146,7 @@ msgstr "Kargo firmasının adını girin."
 msgid "Text for users cargo tracking section."
 msgstr "Kullanıcıların kargo takip bölümü için metin."
 
-#: ../app/Woocommerce/WCSettings.php:74,
-#: ../app/Woocommerce/WCSettings.php:83
+#: ../app/Woocommerce/WCSettings.php:74, ../app/Woocommerce/WCSettings.php:83
 msgid "Tags available: [shipping_date], [tracking_code], [img], [company]"
 msgstr "Mevcut etiketler: [shipping_date], [tracking_code], [img], [company]"
 
@@ -250,12 +242,9 @@ msgstr "Lütfen bütün boşlukları doldurun."
 msgid "New cargo company added."
 msgstr "Yeni kargo firması eklendi."
 
-#: ../app/Base/Hooks/Activate.php:23,
-#: ../app/Base/Hooks/Activate.php:31,
-#: ../app/Base/Hooks/Activate.php:39,
-#: ../app/Base/Hooks/Activate.php:47,
-#: ../app/Base/Hooks/Activate.php:55,
-#: ../app/Base/Hooks/Activate.php:63
+#: ../app/Base/Hooks/Activate.php:23, ../app/Base/Hooks/Activate.php:31,
+#: ../app/Base/Hooks/Activate.php:39, ../app/Base/Hooks/Activate.php:47,
+#: ../app/Base/Hooks/Activate.php:55, ../app/Base/Hooks/Activate.php:63
 msgid "Your order was sent via [company] on [shipping_date]. Cargo Tracking Code: [tracking_code]"
 msgstr "Siparişiniz [shipping_date] tarihinde [company] aracılığıyla gönderildi. Kargo Takip Kodu: [tracking_code]"
 
@@ -269,4 +258,4 @@ msgstr "{site_title} Kargoya Verildi"
 
 #: ../app/Base/Hooks/Activate.php:100
 msgid "<p>[description]</p><p>Click <a href=\"[url]\" target=\"_blank\">here</a> to follow your cargo.</p>"
-msgstr "<p>[description]</p><p>Kargonuzu takip etmek için <a href=\"[url]\" target=\"_blank\">burayı</a> tıklayın.</p>"
+msgstr "<p>[description]</p><p>Kargonuzu takip etmek için <a href=\"[url]\" target=\"_blank\">buraya</a> tıklayın.</p>"
