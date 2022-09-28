@@ -205,8 +205,8 @@ class WCSettings extends \WC_Settings_Page
 
         switch ($current_section) {
             case 'new':
-                $sonuc = TableFunctions::post_add($this->get_settings($current_section));
-                $this->returnResult($sonuc);
+                $result = TableFunctions::post_add($this->get_settings($current_section));
+                $this->returnResult($result);
                 break;
             case 'settings':
                 $settings = $this->get_settings($current_section);
@@ -215,9 +215,9 @@ class WCSettings extends \WC_Settings_Page
         }
     }
 
-    public function returnResult($sonuc)
+    public function returnResult($result)
     {
-        if ($sonuc) {
+        if ($result) {
             $messages = __('New cargo company added.', 'cargo_tracking_for_woocommerce');
             wp_safe_redirect('admin.php?page=wc-settings&tab=cargo_tracking_for_woocommerce&msg=' . base64_encode($messages));
         } else {

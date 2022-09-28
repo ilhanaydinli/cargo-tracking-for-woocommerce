@@ -82,7 +82,8 @@ class Table extends \WP_List_Table
 
         $data = array_slice($data, (($currentPage - 1) * $perPage), $perPage);
 
-        $this->_column_headers = [$columns, $hidden, $sortable];
+        $this->_column_headers = [$columns, $hidden, $sortable, 'company'];
+
         $this->items = $data;
 
         $this->process_bulk_action();

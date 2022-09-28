@@ -72,4 +72,9 @@
     .wp-list-table tr:not(.inline-edit-row):not(.no-items) td.column-primary~td:not(.check-column){
         padding:initial;
     }
+
+    div.cargo-tracking-for-woocommerce_table .wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.column-primary)::before{
+        position: initial;
+        font-weight: bold;
+    }
 }

@@ -17,13 +17,16 @@ class TableFunctions
             echo '<div id="message" class="error inline"><p><strong>' . esc_html(base64_decode($_GET['err'])) . '</strong></p></div>';
         }
 ?>
-        <div class="wrap" id="wpse-list-table">
+        <div class="wrap cargo-tracking-for-woocommerce_table" id="wpse-list-table">
             <form method="post">
                 <div class="wrap">
-                    <h1 class="wp-heading-inline show" style="display:inline-block;"><?php _e('Cargo Tracking', 'cargo_tracking_for_woocommerce') ?> </h1>
-                    <a href="<?php echo admin_url('admin.php?page=wc-settings&tab=cargo_tracking_for_woocommerce&section=new'); ?>" class=" page-title-action show"><?php _e('New Cargo Company', 'cargo_tracking_for_woocommerce') ?></a>
+                    <h1 class="wp-heading-inline show" style="display:inline-block;">
+                    <?php _e('Cargo Tracking', 'cargo_tracking_for_woocommerce') ?>
+                    </h1>
+                    <a href="<?php echo admin_url('admin.php?page=wc-settings&tab=cargo_tracking_for_woocommerce&section=new'); ?>" class=" page-title-action show">
+                    <?php _e('New Cargo Company', 'cargo_tracking_for_woocommerce') ?>
+                    </a>
                     <?php $exampleListTable->display(); ?>
-
                 </div>
             </form>
         </div>
