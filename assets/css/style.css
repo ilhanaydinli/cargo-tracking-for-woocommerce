@@ -61,3 +61,15 @@
     border-top: 1px solid #ddd;
     padding:15px 0 0px 0;
 }
+
+@media screen and (max-width: 782px){
+    td.cargo_tracking_for_woocommerce.column-cargo_tracking_for_woocommerce{
+        display: block !important;
+    }
+    td.cargo_tracking_for_woocommerce.column-cargo_tracking_for_woocommerce::before{
+        display: none !important;
+    }
+    .wp-list-table tr:not(.inline-edit-row):not(.no-items) td.column-primary~td:not(.check-column){
+        padding:initial;
+    }
+}
